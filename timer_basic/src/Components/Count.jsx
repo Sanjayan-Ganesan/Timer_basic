@@ -29,6 +29,11 @@ useEffect(()=>{
 
 },[starttimer])
 
+if(count < 100){
+    !setstarttimer
+}else{
+    setstarttimer
+}
 
 
 
@@ -40,8 +45,7 @@ useEffect(()=>{
 <h1>Counter:</h1>
 <Countvalue count={count}/>
 
-<button onClick={()=>setstarttimer(true)}>Start</button>
-<button onClick={()=>setstarttimer(false)}>Stop</button>
+
 
 </div>
 
