@@ -4,7 +4,7 @@ import Countvalue from './Countvalue';
 const Count = () => {
 
 
-const[count,setCount] = React.useState(0);
+const[count,setCount] = React.useState(99);
 const[starttimer,setstarttimer] = React.useState(false);
 const[timerid,settimerid] = React.useState(0);
 useEffect(()=>{
@@ -21,21 +21,18 @@ useEffect(()=>{
     }
 
 
-    return ()=>{
-        if(timerid != 0){
-            clearInterval(timerid);
-        }
-    }
+
+   
 
 },[starttimer])
+
+
 
 if(count < 100){
     !setstarttimer
 }else{
     setstarttimer
 }
-
-
 
 
   return (
